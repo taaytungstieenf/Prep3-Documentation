@@ -1,0 +1,5 @@
+$ ./mvnw spring-boot:run
+$ ./mvnw clean package
+$ ./mvnw test
+$ ./mvnw clean
+$ java -jar target/application-name.jar
