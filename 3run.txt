@@ -1,0 +1,16 @@
+Java
+	$ sudo update-alternatives --config java
+	$ ./mvnw spring-boot:run
+	$ ./mvnw clean package
+	$ ./mvnw test
+	$ ./mvnw clean
+	$ java -jar target/application-name.jar
+	
+JavaScript
+	$ node app.js
+	$ npm install
+	$ npm run start
+	$ npm run dev
+	$ npm test
+	$ npm run build
+	$ npm run clean
