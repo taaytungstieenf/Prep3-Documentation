@@ -1,0 +1,23 @@
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '246357';
+CREATE USER 'tae'@'localhost' IDENTIFIED BY '246357';
+GRANT ALL PRIVILEGES ON *.* TO 'tae'@'localhost';
+
+CREATE DATABASE db_name;
+DROP DATABASE db_name;
+SHOW DATABASES;
+USE db_name;
+
+CREATE TABLE table_name (col1 dtype, col2 dtype);
+DROP TABLE table_name;
+TRUNCATE TABLE table_name;
+SHOW TABLES;
+DESCRIBE table_name;
+
+SELECT * FROM table_name;
+SELECT col1, col2 FROM table_name;
+
+ALTER TABLE table_name MODIFY col_name dtype NOT NULL;
+ALTER TABLE table_name ADD UNIQUE KEY col_name;
+ALTER TABLE table_name ADD PRIMARY KEY col_name;
+ALTER TABLE table_name ADD FOREIGN KEY col_name REFERENCES other_table_name(other_col_name);
+ALTER TABLE table_name DROP COLUMN col_name;

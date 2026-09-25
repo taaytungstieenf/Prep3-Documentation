@@ -1,0 +1,29 @@
+git init
+git init /path/to/dir
+rm -rf .git
+rm -rf .git /path/to/dir
+
+git add .
+git add <object>
+git restore --staged
+git restore --staged <object>
+git commit -m "log"
+
+git status
+git log0
+git log <object>
+
+git checkout -- <object>
+git checkout <hash> -- <object>
+git checkout <hash>
+
+git remote add <remote_alias> <remote_link>
+git remote remove <remote_alias>
+git branch -M <local_branch>
+git push -u <remote_alias> <local_branch>
+
+Note:
+	remote_alias	= origin
+	local_branch	= main
+
+
